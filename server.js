@@ -1,7 +1,7 @@
 const app = require('./app');
 const connect = require('./db/db');
 
-app.listen(5000,async()=>{
+app.listen(process.env.PORT,async()=>{
     console.log("Connectin to DB")
     try{
     await connect()
